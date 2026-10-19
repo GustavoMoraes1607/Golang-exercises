@@ -4,19 +4,27 @@ import "fmt"
 
 func main() {
 	slice := [][]string{
-		[]string{"Gustavo",
+		{
+			"Gustavo",
 			"Rocha",
-			"Video-games"},
-		[]string{"Jamille",
+			"Video-games",
+		},
+		{
+			"Jamille",
 			"Araújo",
-			"Desenhar"},
-		[]string{"João",
-			"Vitor",
-			"Filmes e Séries"},
+			"Desenhar",
+		},
+		{
+			"João",
+			"Elias",
+			"Filmes e Séries",
+		},
 	}
 	for _, v := range slice {
 		fmt.Println(v[0], v[1])
-		fmt.Println("\t", "Nome:", v[0], "\n", "\t", "Sobrenome:", v[1], "\n", "\t", "Hobby:", v[2])
+		fmt.Println("\t", "Nome:", v[0])
+		fmt.Println("\t", "Sobrenome:", v[1])
+		fmt.Println("\t", "Hobby:", v[2])
 	}
 }
 
