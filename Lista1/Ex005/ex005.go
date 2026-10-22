@@ -3,10 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	cons := 12.0
-	dist := 80.0 * (35.0 / 60.0)
-	val := dist / cons
-	fmt.Println(dist, val)
+	kml := 0.0
+	fmt.Println("Quantos km/l faz o seu carro?")
+	fmt.Scan(&kml)
+	temp := 0.0
+	fmt.Println("Quanto tempo durou a viagem? (em minutos)")
+	fmt.Scan(&temp)
+	kmh := 0.0
+	fmt.Println("Qual a velocidade média usada no percurso? (em km/h)")
+	fmt.Scan(&kmh)
+	dist := kmh * (temp / 60.0)
+	val := dist / kml
+	fmt.Printf("A Distancia percorrida foi de cerca de: %.2fkm\n", dist)
+	fmt.Printf("Foram gastos cerca de: %.2f Litros de gasolina.", val)
 }
 
 /* Escreve um programa para determinar a quantidade de litros de combustivel gastos em uma
