@@ -14,7 +14,7 @@ func main() {
 	} else if x < y {
 		fmt.Printf("X(%v) é menor que Y(%v)", x, y)
 	} else {
-		fmt.Printf("X(%v) é igual a Y(%v)", x, y)
+		fmt.Printf("X(%v) é igual a Y(%v), insira valores diferentes", x, y)
 	}
 }
 
