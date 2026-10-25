@@ -1,0 +1,21 @@
+Supondo que x=4, y=6 e z=1, qual o valor lógico das seguintes expresões:
+1. if (x == 5): false
+2. if (x >= 5): false
+3. if (y != 1): true
+4. if (y != 6): false
+5. if (y == 6 && z == 1): true
+6. if (y == 6 && z == 2): false
+7. if (y == 6 || z == 1): true
+8. if (y == 2 || z == 1): true
+9. if (y == 2 || z == 2 || x == 2): false
+10. if (y == 2 || z == 2 || x == 4): true
+11. if (y == 2 || z == 2 || x == 2 || z == 6): false
+12. if (x == 5 || z < 0): false
+13. if (x == 5 && z < 0): false
+14. if (x == 4 && z < 1): false
+15. if ((x == 4 || y > z) && z > 1): false
+16. if (x == 4 || ( y > z && z >= 1)): true
+17. if (( x == 4 || y > z) && !(z)): false
+18. if ( y - x + z - 1): true
+19. if (0): false
+20. if !(1): false
