@@ -6,14 +6,13 @@ func main() {
 	x := 0
 	fmt.Println("Escolha o número para calcular o fatorial: ")
 	fmt.Scan(&x)
+	if x <= 0 {
+		fmt.Println("O valor escolhido é inválido.")
+	}
 	for y := x - 1; y > 0; y-- {
 		x *= y
 	}
-	if x <= 0 {
-		fmt.Println("O valor escolhido é inválido.")
-	} else {
-		fmt.Println("O resultado é:", x)
-	}
+	fmt.Println("O resultado é:", x)
 
 }
 

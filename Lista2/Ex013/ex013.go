@@ -17,6 +17,8 @@ func main() {
 	fmt.Scan(&faltas)
 	if nota1+nota2+nota3 >= media && faltas <= lmtfaltas {
 		fmt.Println("APROVADO")
+	} else if nota1+nota2+nota3 < media && faltas > 18 {
+		fmt.Println("REPROVADO POR MÉDIA E POR FALTA")
 	} else if nota1+nota2+nota3 < media {
 		fmt.Println("REPROVADO POR MÉDIA")
 	} else {

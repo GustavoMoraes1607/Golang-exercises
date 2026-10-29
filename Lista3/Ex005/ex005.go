@@ -9,13 +9,12 @@ func main() {
 	fmt.Scan(&n1)
 	fmt.Println("Insira um valor para o segundo número:")
 	fmt.Scan(&n2)
-	x := n1
-	for y := x + 1; y < n2; y++ {
+	x := 0
+	for y := n1 + 1; y < n2; y++ {
 		if y%2 == 1 {
 			x += y
 		}
 	}
-	x = x - n1
 	fmt.Printf("A soma dos números impares do intervalo entre %v e %v é: %v", n1, n2, x)
 }
 

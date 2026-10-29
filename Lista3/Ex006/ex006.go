@@ -11,16 +11,15 @@ func main() {
 	fmt.Scan(&n2)
 	if n1 > n2 {
 		fmt.Println("O primeiro valor tem de ser menor que o segundo valor.")
-	} else {
-		x := n1
-		for y := x; y < n2; y++ {
-			if y%2 == 1 {
-				x += y
-			}
-		}
-		x = x - n1
-		fmt.Printf("A soma dos números impares do intervalo entre %v e %v é: %v", n1, n2, x)
+		return
 	}
+	x := 0
+	for y := n1 + 1; y < n2; y++ {
+		if y%2 == 1 {
+			x += y
+		}
+	}
+	fmt.Printf("A soma dos números impares do intervalo entre %v e %v é: %v", n1, n2, x)
 }
 
 /*Altere o programa anterior de tal maneira que quando o usuário digitar um intervalo
