@@ -6,14 +6,15 @@ func main() {
 	x := 0
 	fmt.Println("Escolha um valor para X.")
 	fmt.Scan(&x)
-	if x == 1 {
+	switch x {
+	default:
+		fmt.Println("Valor inválido")
+	case 1:
 		fmt.Println("X é igual a 1")
-	} else if x == 5 {
+	case 5:
 		fmt.Println("X é igual a 5")
-	} else if x == 10 {
+	case 10:
 		fmt.Println("X é igual a 10")
-	} else {
-		fmt.Println("Valor inválido.")
 	}
 }
 
